@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<style>
+.section-title {
+  margin: 50px 0px 50px 0px;
+}
+
+.section-title h2 {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+#portfolio .portfolio-list {
+  margin-bottom: 50px;
+}
+
+#portfolio .portfolio-list .nav {
+  display: inline-block;
+}
+
+#portfolio .portfolio-list .nav li 
+{
+  margin: 10px 30px 10px 30px;
+  font-size: 16px;
+  color: #0000;
+  line-height: 16px;
+  cursor: pointer;
+  font-family: 'Josefin sans',Sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  float: none; 
+  display: inline-block;
+}
+
+#portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
+  color: #b8a07e;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+.portfolio-thumbnail {
+  margin-bottom: 10px;
+  overflow: hidden;
+  min-height: 260px;
+}
+
+.portfolio-thumbnail img {
+  width:400px;
+  height: 250px;
+}
+</style>
+<script>
+
+</script>
+<head>
+	  <title>Search Filter</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<style >
+	.card{
+		box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+		transition: 0.3s;
+		border-width:1px;
+		border-style:solid;
+		border-color:black;
+	}
+
+	.card:hover{
+		box-shadow: 0 12px 10px rgba(0,0,0,0.2);
+	}
+	.container{
+		padding: 2px 5px;
+	}
+body{
+	font-family: Gotham;
+}
+
+</style>
+
+<script >//this script makes sure that it filter the what word you are looking for
+	$(document).ready(function(){
+		$("#myinput").on("keyup",function(){
+		var value = $(this).val().toLowerCase();
+		$("#card div").filter(function(){
+			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+	
+		});
+	});
+		});
+
+
+</script>
+
+
+
+<body >
+	<div id ="portfolio" class="text-center paddsection">
+		<div class="section-title text-center">
+			<h2>Gallery Search Filter</h2><br>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<input id="myinput" type="text"  placeholder="Search..." class="form-control"><br><br>
+
+					<div class="portfolio-container" id="card">
+
+						<div class="col-md-4 portfolio-thumbnail  " >
+							<div class="card" id="card">
+								<img src="../img/room.jpg" alt ="hello" style="width: 100%">
+								<h4><b>Room 01</b></h4>
+								<p>Status: Available</p>
+							</div>
+						</div>
+
+	  <div class="col-md-4 portfolio-thumbnail all ">
+                <div class="card" id="card">
+				  <img src="../img/room2.jpg" alt="Avatar" style="width: 100%">
+				    <h4><b>Room 02</b></h4> 
+				    <p>Status: Available</p> 
+				</div>
+            </div>
+
+
+            <div class="col-md-4 portfolio-thumbnail ">
+              	<div class="card" id="card">
+				  <img src="../img/room3.jpg" alt="Avatar"style="width: 100%">
+				    <h4><b>Room 03</b></h4> 
+				    <p>Status:Taken</p> 
+				</div>
+            </div>
+
+
+            <div class="col-md-4 portfolio-thumbnail ">
+              	<div class="card" id="card">
+				  <img src="../img/room4.jpg" alt="Avatar"style="width: 100%">
+				    <h4><b>Room 04</b></h4> 
+				    <p>Status: Available</p> 
+				</div>
+            </div>
+
+
+
+            <div class="col-md-4 portfolio-thumbnail ">
+              	<div class="card" id="card">
+				  <img src="../img/room5.jpg" alt="Avatar"style="width: 100%">
+   					 <h4><b>Room 05  </b></h4> 
+				    <p>Status: Taken</p> 
+				</div>
+            </div>
+
+
+
+            <div class="col-md-4 portfolio-thumbnail ">
+              	<div class="card" id="card">
+				  <img src="../img/room6.jpg" alt="Avatar"style="width: 100%">
+				    <h4><b>Room 06</b></h4> 
+				    <p>Status:Taken</p> 
+				</div>
+            </div>
+
+
+
+            <div class="col-md-4 portfolio-thumbnail ">
+              	<div class="card" id="card">
+				  <img src="../img/osaka.jpg" alt="Avatar"style="width: 100%">
+				    <h4><b>Osaka</b></h4> 
+				    <p>Island:Honshu</p> 
+				</div>
+            </div>
+
+
+
+           <div class="col-md-4 portfolio-thumbnail ">
+              	<div class="card" id="card">
+				  <img src="../img/hiroshima.jpg" alt="Avatar"style="width: 100%">
+				    <h4><b>Hiroshima</b></h4> 
+				    <p>Island:Honshu</p> 
+				</div>
+            </div>
+
+
+
+            <div class="col-md-4 portfolio-thumbnail ">
+              	<div class="card" id="card">
+				 <img src="../img/fukuoka.jpg" alt="Avatar"style="width: 100%">
+				    <h4><b>Fukuoka </b></h4> 
+				    <p>Island:Kyushu</p> 
+				</div>
+            </div>
+
+
+
+            <div class="col-md-4 portfolio-thumbnail ">
+              	<div class="card" id="card">
+				 <img src="../img/nagasaki.jpg" alt="Avatar"style="width: 100%">
+				    <h4><b>Nagasaki</b></h4> 
+				    <p>Island:Kyushu</p> 
+				</div>
+            </div>
+
+
+               <div class="col-md-4 portfolio-thumbnail ">
+              	<div class="card" id="card">
+				 <img src="../img/matsumaya.jpg" alt="Avatar"style="width: 100% ">
+				    <h4><b>Matsumaya</b></h4> 
+				    <p>Island:Shikoku</p> 
+				</div>
+            </div>
+
+
+
+
+				</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+</body>
+</html>

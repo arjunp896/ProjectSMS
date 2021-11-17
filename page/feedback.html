@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+       <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"</script>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 20px;
+}
+#tcb-testimonial-carousel {
+  margin-top: 30px;
+}
+#tcb-testimonial-carousel a {
+  color: #b20000;
+}
+#tcb-testimonial-carousel .text-brand {
+  color: #b20000;
+}
+#tcb-testimonial-carousel .carousel-indicators .active {
+  background: #b20000;
+}
+#tcb-testimonial-carousel .no-margin {
+  margin: 0;
+}
+#tcb-testimonial-carousel .carousel-indicators li {
+  border: 1px solid #ccc;
+}
+#tcb-testimonial-carousel .carousel-control {
+  color: #b20000;
+  width: 5%;
+}
+#tcb-testimonial-carousel .carousel-control:hover,
+#tcb-testimonial-carousel .carousel-control:focus {
+  color: #b20000;
+}
+#tcb-testimonial-carousel .carousel-control.left,
+#tcb-testimonial-carousel .carousel-control.right {
+  background-image: none;
+}
+#tcb-testimonial-carousel .item {
+  padding: 15px 40px;
+  background: #f8f8f8;
+}
+#tcb-testimonial-carousel .media-object {
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  #tcb-testimonial-carousel .media-object {
+    margin-bottom: 15px;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Testimonial</h2>
+
+<!--
+
+
+//will put div testimonial here
+
+
+-->
+<div class="container">
+    <div id="tcb-testimonial-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!--<ol class="carousel-indicators">
+            <li data-target="#tcb-testimonial-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#tcb-testimonial-carousel" data-slide-to="1"></li>
+            <li data-target="#tcb-testimonial-carousel" data-slide-to="2"></li>-->
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="row">
+                    <div class="col-xs-12">
+                       <figure class="clearfix">
+                           <div class="col-md-2 col-sm-2 col-xs-12"><img class="img-responsive media-object" src=""> </div>
+                           <div class="col-md-10 col-sm-10 col-xs-12">
+                                <figcaption class="caption">
+                                    <p class="text-brand lead no-margin">I can't wait to test this out.</p>
+                                    <p><span class="glyphicon glyphicon-thumbs-up"></span> This is a testimonial window. Feedback of user can be displayed here.</p>
+                                    <blockquote class="no-margin">
+                                        <p>Someone Famous</p> <small><cite title="Source Title"><i class="glyphicon glyphicon-globe"></i> www.example1.com</cite></small> </blockquote>
+                                </figcaption>
+                           </div>
+                       </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col-xs-12">
+                       <figure class="clearfix">
+                           <div class="col-md-2 col-sm-2 col-xs-12"><img class="img-responsive media-object" src=""> </div>
+                           <div class="col-md-10 col-sm-10 col-xs-12">
+                                <figcaption class="caption">
+                                    <p class="text-brand lead no-margin">I can't wait to test this out.</p>
+                                    <p><span class="glyphicon glyphicon-thumbs-up"></span> This is a testimonial window. Feedback of user can be displayed here.</p>
+                                    <blockquote class="no-margin">
+                                        <p>Someone Famous</p> <small><cite title="Source Title"><i class="glyphicon glyphicon-globe"></i> www.example1.com</cite></small> </blockquote>
+                                </figcaption>
+                           </div>
+                       </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col-xs-12">
+                       <figure class="clearfix">
+                           <div class="col-md-2 col-sm-2 col-xs-12"><img class="img-responsive media-object" src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg"> </div>
+                           <div class="col-md-10 col-sm-10 col-xs-12">
+                                <figcaption class="caption">
+                                    <p class="text-brand lead no-margin">I can't wait to test this out.</p>
+                                    <p><span class="glyphicon glyphicon-thumbs-up"></span> This is a testimonial window. Feedback of user can be displayed here.</p>
+                                    <blockquote class="no-margin">
+                                        <p>Someone Famous</p> <small><cite title="Source Title"><i class="glyphicon glyphicon-globe"></i> www.example1.com</cite></small> </blockquote>
+                                </figcaption>
+                           </div>
+                       </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#tcb-testimonial-carousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+        <a class="right carousel-control" href="#tcb-testimonial-carousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+    </div>
+<br />
+<a class="btn btn-primary" href=""><i class="fa fa-arrow-left"></i> Back to Menu</a>
+
+</div>
+
+
+<!-- Trigger/Open The Modal -->
+<button  class="btn btn-lg btn-warning btn-primary" id="myBtn">Feedback </button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="imagebg"></div>
+<div class="row " style="margin-top: 50px">
+    <div class="col-md-6 col-md-offset-3 form-container">
+        <h2>Feedback</h2>
+        <p>
+            Please provide your feedback below:
+        </p>
+        <form role="form" method="post" id="reused_form">
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                <label>How do you rate your overall experience?</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" id="radio_experience" value="bad" >
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" id="radio_experience" value="average" >
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" id="radio_experience" value="good" >
+                    Good
+                    </label>
+                </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <label for="comments">
+                        Comments:</label>
+                    <textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="name">
+                        Your Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="email">
+                        Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+
+                        <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button type="submit" class="btn btn-lg btn-warning btn-block" >Post </button>
+                </div>
+            </div>
+
+        </form>
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+            <h3>Posted your feedback successfully!</h3>
+        </div>
+        <div id="error_message"
+                style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
+
+        </div>
+    </div>
+</div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
