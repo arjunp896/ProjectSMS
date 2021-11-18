@@ -1,14 +1,14 @@
-* {
+/*  {
     margin: 0;
     padding: 0;
   }
-  
+ */  
   body {
     font-family: Arial, Helvetica, sans-serif;
     background: #333;
     color: #fff;
     height: 100vh;
-    line-height: 1.6;
+    /* line-height: 1.6; */
     overflow: hidden;
   }
   .square{
@@ -69,18 +69,18 @@
   .lead {
     font-size: 1.5rem;
   }
-  img{
+/*   img{
     width:70px;
     height:70px;
     float: left;
 
   }
-  .imgservice{
+ */  .imgservice{
     width:80%;
     height:80%;
 
   }
-  .navbar {
+/*   .navbar {
     position: fixed;
     top: 0;
     z-index: 1;
@@ -89,7 +89,8 @@
     height: 70px;
     background:slategrey;
     padding-left: 30%;
-  }
+  
+ }
   
 .navbar #signup{
 
@@ -119,7 +120,7 @@
   .navbar ul li a:hover {
     color: skyblue;
   }
-  
+   */
   section {
     display: flex;
     flex-direction: column;
