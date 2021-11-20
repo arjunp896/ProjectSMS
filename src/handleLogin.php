@@ -1,6 +1,8 @@
 <?php
+
 include_once 'dbconfig.php';
 include_once '../src/User/User.class.php';
+include_once '../src/Constants.class.php';
 
 if(isset($_POST["email"])){
 
@@ -15,8 +17,17 @@ if(isset($_POST["email"])){
         $user = $user->verifyUser($connection);
         
         if($user){
+//             echo "login";
             
-            echo "login";
+            $roleId = $user->getRoleId();
+            if($roleId == Constants::ROLE_USER){
+               
+                header("location: ../page/UserHome.php");
+            }
+            else{
+                header("location: ../page/AdminHome.php");
+            }
+            
             
          }
          

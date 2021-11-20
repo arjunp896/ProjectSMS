@@ -25,7 +25,7 @@ if (isset($_POST["fname"])) {
             $result = $user->createUser($connection);
 
             if ($result) {
-//                 header("location: ../page/userLogin.php");
+                header("location: ../page/Login.php");
             } else {
                 echo "Erro in save user: " . $result;
             }

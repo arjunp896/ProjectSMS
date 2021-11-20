@@ -14,7 +14,7 @@ class User
 
     private $password;
 
-    private $homeId;
+    private $roleId;
 
     function __construct($fname = null, $lname = null, $email = null, $password = null)
     {
@@ -49,9 +49,9 @@ class User
         return $this->password;
     }
 
-    function getHomeId()
+    function getRoleId()
     {
-        return $this->homeId;
+        return $this->roleId;
     }
 
     function setUserId($userId)
@@ -71,7 +71,7 @@ class User
 
     function setEmail($email)
     {
-        $this->email = $email;
+        $this->email = strtolower($email);
     }
 
     function setPassword($password)
@@ -79,9 +79,9 @@ class User
         $this->password = $password;
     }
 
-    function setHomeId($homeId)
+    function setRoleId($roleId)
     {
-        $this->homeId = $homeId;
+        $this->roleId = $roleId;
     }
 
     function createUser(PDO $connection)
@@ -112,7 +112,9 @@ class User
         if (! empty($user)) {
 
             if ($user->getPassword() == $this->password) {
-                return TRUE;
+                
+                $user->setPassword("");
+                return $user;
             }
         }
 
@@ -156,6 +158,7 @@ class User
                 $user->setLname($u["lname"]);
                 $user->setEmail($u["email"]);
                 $user->setPassword($u["password"]);
+                $user->setRoleId($u["roleid"]);
             }
 
             return serialize($user);
